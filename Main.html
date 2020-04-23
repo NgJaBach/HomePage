@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="pic/wedding-marriage-love-bird-dove-cute-couple-512.png">
+<link rel="stylesheet" href="cal.css" type="text/css">
+<link rel="stylesheet" href="fea.css" type="text/css">
+<link rel="stylesheet" href="first.css" type="text/css">
+<link rel="stylesheet" href="second.css" type="text/css">
+<link rel="stylesheet" href="tongquat.css" type="text/css">
+<link rel="stylesheet" href="moveset.css" type="text/css">
+<link rel="">
+<meta charset="UTF-8">
+<div class="menu-layer-1">
+<a href="https://codefun.vn/" target="_blank"><img width=10% height=10% src="pic/unnamed%20(1).png" alt="Codefun" title="Codefun"></a>
+<a href="https://www.hackerrank.com/dashboard?h_r=logo" target="_blank"><img width=9% height=9% src="pic/h_mark_sm-9c05999c62674028552f4e813728e591.svg" alt="HackerRank" title="HackerRank"></a>
+<a href="https://codeforces.com/" target="_blank"><img width=10% height=10% src="pic/cc.png" alt="Codeforces" title="Codeforces"></a>
+<a href="https://github.com/" target="_blank"><img width=10% height=10% src="pic/github_PNG40.png" alt="Github" title="Github"></a>
+<a href="https://www.geeksforgeeks.org/" target="_blank"><img width=10% height=10% src="pic/download3.png" alt="Geeksforgeeks" title="GeeksForGeeks"></a>
+<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img width=10% height=10% src="pic/unnamed%20(2).png" alt="Gmail" title="Gmail"></a>
+<a href="https://drive.google.com/drive/u/0/my-drive" target="_blank"><img width=10% height=10% src="pic/Google_Drive_logo.png" alt="Driver" title="Driver"></a>
+<a href="https://www.youtube.com/" target="_blank"><img width=10% height=10% src="pic/1_Youtube_colored_svg-512.webp" alt="Youtube" title="Youtube"></a>
+<a href="https://www.facebook.com/" target="_blank"><img width=10% height=10% src="pic/Facebook_Logo_(2019).png" alt="Facebook" title="Facebook"></a>
+</div>
+
+</head>
+<body>
+<div class="bod">
+<form  action="https://google.com/search" method="get" target="_blank" class="adj">
+<input type="hidden" name="sitesearch" />
+<input required type="text" name="q" placeholder="TOUCH ME!" class="searchbar"/>
+<button type="submit" class="butt"><img src="pic/search--v2.png" width="20" height="20"></button>
+<div class="top-bar">
+<button type="button" onclick="myfunction()" class="calbox"><img class="cent" src="pic/366-512.png" height="40" width="40"></button>
+<button type="button" onclick="plus()" class="addbox"><img class="cent" src="pic/add_plus-512.png" height="40" width="40"></button>
+</div>
+</form>
+<div class="modal" id="new">
+<div class="addlist topdown">
+<div style="position:sticky">
+<div class="addlist-box addlist-a">
+<h1>Create list</h1>
+<button onclick="plus()" class="cancel" style="postion:relative;top:0%;right:0%"><img src="pic/cancel_grey_192x192.png" width="25" height="25"></button>
+</div>
+</div>
+<div class="addlist-box addlist-b">
+<label class="col2" for="diamondradio">Type</label>
+<div id="diamondradio" class="radio-toolbar">
+    <input onclick="url(1)" type="radio" value="Link" id="link" name="radiogroup">
+    <label for="link"><img src="pic/Very-Basic-Link-icon.png" height="20">  Link</label>
+    <input onclick="url(0)" type="radio" value="List" id="list" name="radiogroup" checked>
+    <label for="list"><img src="pic/img_82026.png" height="20">  List</label>
+    <input onclick="url(0)" type="radio" value="Task" id="task" name="radiogroup">
+    <label for="task"><img src="pic/img_503713.png" height="20">  Task</label>
+</div>
+<label class="col2" for="storage">Area</label>
+<select class="custom-select" id="storage">
+<option value="0">Investigate</option>
+<option value="1">Entertainment</option>
+<option value="2">My Workspace</option>
+</select>
+<div id="colorop">
+<label class="col2" for="coloropt">Text's Color</label>
+	<div id="coloropt">
+		<input type="color" value="#000000" id="addcolor">
+	</div>
+	</div>
+<label class="col2" for="fomtitle">Title</label>
+	<div id="fomtitle">
+		<input type="text" class="text-form" id="addtitle">
+	</div>
+<div id="fomurl">
+<label class="col2" for="fomlink">Link</label>
+	<div id="fomlink">
+		<input type="url" class="text-form" id="addurl">
+	</div>
+</div>
+</div>
+	<div class="addlist-box addlist-c">
+		<div id="app" class="alert alert-danger"><p id="botox"></p></div>
+		<button class="addlist-button" onclick="plus()">Cancel</button>
+		<button class="addlist-button" style="background-color:#0275d8;color:#fff" onclick="confirm()">Confirm</button>
+	</div>
+</div>
+</div>
+
+<div class="modal" id="cal">
+	<div class="calculator topdown">
+		<button onclick="myfunction()" class="cancel"><img src="pic/cancel_grey_192x192.png" width="35" height="35"></button>
+		<form name="fom">
+			<input type="text" class="showingtext" name="textview" onkeydown="if(event.keyCode==13){equal();return false;}"/><br><br>
+		</form>
+		<div>
+		<table style="margin:3px">
+			<tr>
+			<td><button type="button" class="dick" onclick="clean()">C</button></td>
+			<td><button type="button" class="dick" onclick="back()"><</button></td>
+			<td><button type="button" class="dick" onclick="insert('%')">%</button></td>
+			<td><button type="button" class="dick" onclick="insert('/')">÷</button></td>
+			</tr>
+			<tr>
+			<td><button type="button" class="dick" onclick="insert(7)">7</button></td>
+			<td><button type="button" class="dick" onclick="insert(8)">8</button></td>
+			<td><button type="button" class="dick" onclick="insert(9)">9</button></td>
+			<td><button type="button" class="dick" onclick="insert('*')">x</button></td>
+			</tr>
+			<tr>
+			<td><button type="button" class="dick" onclick="insert(4)">4</button></td>
+			<td><button type="button" class="dick" onclick="insert(5)">5</button></td>
+			<td><button type="button" class="dick" onclick="insert(6)">6</button></td>
+			<td><button type="button" class="dick" onclick="insert('-')">-</button></td>
+			</tr>
+			<tr> 
+			<td><button type="button" class="dick" onclick="insert(1)">1</button></td>
+			<td><button type="button" class="dick" onclick="insert(2)">2</button></td>
+			<td><button type="button" class="dick" onclick="insert(3)">3</button></td>
+			<td rowspan="2"><button type="button" class="special-dick" onclick="equal()">=</button></td>
+			</tr>
+			<tr>
+		<td><button type="button" class="dick" onclick="insert(0)">0</button></td>
+		<td><button type="button" class="dick" onclick="insert('.')">.</button></td>
+		<td><button type="button" class="dick" onclick="insert('+')">+</button></td>
+		</tr>
+		</table>
+		</div>
+	</div>
+</div>
+<center>
+	<div class="laz a">
+	<h1 class="font-menu-a">Investigate</h1>
+	<ul id="inv" class="design_list" style="display:block"></ul>
+	</div>
+	<div class="PHE"></div>
+	<div class="laz b">
+	<h1 class="font-menu-b" id="b">Entertainment</h1>
+	<ul id="ent" class="design_list" style="display:block"></ul>
+	</div>
+	<div class="PHE"></div>
+	<div class="c laz">
+	<h1 class="font-menu-c" id="c">My Workspace</h1>
+	<ul id="work" class="design_list" style="display:block"></ul>
+	</div>
+</center>
+</div>
+<center>
+<div class="contact">
+<strong>Your feedback</strong>
+<form action="mailto:ngbach2008@gmail.com" method="post" enctype="text/plain">
+<button class="contact-button" type="submit">
+<img height="50" width="50"src="pic/602.10-send-message-icon-iconbunny.jpg">
+</button></form>
+</center>
+</div>
+<div class="credit">
+<center>HomePage 2020 Front-end (codename <strong>Bone</strong>), written by <a href="https://github.com/NgJaBach">Bach</a>.</center>
+<center>HomePage 2020 Back-end (codename <strong>Back</strong>), written by <a href="https://github.com/NgJaBach">Bach</a>.</center>
+</div>
+<script type="text/javascript">
+//localStorage.clear();
+const N=100000;
+var cnt=localStorage.getItem(0),queue=new Array(N),dem=0;
+if(cnt===null) cnt=1;
+//alert(cnt);
+for(var p=1;p<cnt;++p){
+	var take=localStorage.getItem(p);
+	if(take===null) continue;
+	var rohan=JSON.parse(take);
+	queue[dem++]=p;
+	output(rohan[0],rohan[1],rohan[2],rohan[3],rohan[4],0);
+}
+
+
+var i;
+function output(title,area,type,color,url,cond){
+	var place,close=document.getElementsByClassName("close");
+	if(area==="0"){
+		place=document.getElementById("inv");
+	}
+	else if(area=="1"){
+		place=document.getElementById("ent");
+	}
+	else {
+		place=document.getElementById("work");
+	}
+	var li=document.createElement("li");
+	var spam=document.createElement("span"),info=document.createElement("span");
+	info.className="dis-info";
+	li.appendChild(spam);
+	li.appendChild(info);
+	if(type=="Link"){
+		var linh=document.createElement("a");
+		linh.setAttribute('href',url);
+		linh.appendChild(document.createTextNode(title));
+		li.appendChild(linh);
+	}
+	else if(type==="List"){ 
+		li.appendChild(document.createTextNode(title));
+		li.style.color=color;
+		li.style.cursor="auto";
+	}
+	else {
+		li.appendChild(document.createTextNode(title));
+		li.style.color=color;
+		li.onclick=function(){
+			spam.classList.toggle("tick");
+			li.classList.toggle("ticky");
+		}
+	}
+	info.onclick=function(){
+		alert(
+		"---List's info---\n"+
+		"Type: "+type+"\n"+
+		"Title: "+title+"\n"+
+		"Color: "+color+"\n"+
+		"Link: "+(url===""?"None":url)+"\n"+
+		"Area: "+area+"\n");
+	}
+	if(cond===1){
+		var arr=[title,area,type,color,url];
+		localStorage.setItem(cnt,JSON.stringify(arr));
+		queue[dem++]=cnt;
+		localStorage.setItem(0,Number(cnt)+1);
+		cnt=localStorage.getItem(0);
+	}
+	place.appendChild(li);
+	var cross=document.createElement("span");
+	cross.className="close";
+	cross.appendChild(document.createTextNode("\u00D7"));
+	li.appendChild(cross);
+	for(i=0;i<close.length;++i){
+		(function(index){
+			close[i].onclick=function(){
+			var sick=this.parentElement;
+				sick.style.display="none";
+				//alert(queue[index]);
+				localStorage.removeItem(queue[index]);
+				//alert(close.length);
+			}		
+		})(i);
+
+	}
+}
+
+
+
+
+
+
+var modal=document.getElementById("cal");
+var model=document.getElementById("new");
+var samuel=document.getElementById("fomurl");
+var emanuela=document.getElementById("colorop");
+window.onclick=function(event){
+	if(event.target==modal){
+		myfunction();
+	}
+	else if(event.target==model){
+		plus();
+	}
+}
+var lnew=document.getElementById("new");
+lnew.style.display="none";
+function plus(){
+	if(lnew.style.display==="none"){
+		lnew.style.display="block";
+	}
+	else {
+	var checkbox=document.getElementsByName("radiogroup"),i;
+	var title=document.getElementById("addtitle"),url=document.getElementById("addurl"),color=document.getElementById("addcolor");
+	alex("");
+	for(i=0;i<checkbox.length;++i){
+		if(checkbox[i].checked===true){
+			checkbox[i].checked=false;
+			checkbox[1].checked=true;
+		}
+	}
+	checkbox=document.getElementById("storage");
+	for(i=0;i<checkbox.length;++i){
+		if(checkbox[i].selected===true){
+			checkbox[i].selected=false;
+			checkbox[0].selected=true;
+		}
+	}
+	title.value="";
+	url.value="";
+	color.value="#000000";
+	lnew.style.display="none";
+	if(samuel.style.display==="block"){
+		samuel.style.display="none";
+	}
+	}
+}
+function back(){
+	var ans=document.fom.textview.value;
+	document.fom.textview.value=ans.substring(0,ans.length-1);
+}
+function insert(num) {document.fom.textview.value+=num;}
+function equal() {
+	var ans=document.fom.textview.value;
+	if(ans){
+		document.fom.textview.value=eval(ans);
+	}
+}
+function clean() {document.fom.textview.value="";}
+var calculus=document.getElementById("cal");
+calculus.style.display="none";
+function myfunction() {
+	if(calculus.style.display==="none"){
+		calculus.style.display="block";
+	}
+	else {
+		calculus.style.display="none";
+		clean();
+	}
+}
+samuel.style.display="none";
+function url(ded){
+	if(ded===0){
+		samuel.style.display="none";
+		emanuela.style.display="block";
+	}
+	else {
+		samuel.style.display="block";
+		emanuela.style.display="none";
+	}
+}
+var alert_alex=document.getElementById("app"),tech=document.getElementById("botox");
+alert_alex.style.display="none";
+function alex(teck){
+	if(teck===""){
+		alert_alex.style.display="none";
+		return;
+	}
+	alert_alex.style.display="block";
+	tech.innerHTML=teck+" is empty!";
+}
+function confirm(){
+	var i,checkbox=document.getElementsByName("radiogroup");
+	var title=document.getElementById("addtitle"),area,url=document.getElementById("addurl"),type,color=document.getElementById("addcolor");
+	if(title.value===""){
+		alex("Title");
+		return;
+	}
+	for(i=0;i<checkbox.length;++i){
+		if(checkbox[i].checked===true){
+			type=checkbox[i].value;
+			break;
+		}
+	}
+	if(type==="Link"&&url.value===""){
+		alex("Url");
+		return;
+	}
+	checkbox=document.getElementById("storage");
+	for(i=0;i<checkbox.length;++i){
+		if(checkbox[i].selected===true){
+			area=checkbox[i].value;
+			break;
+		}
+	}
+	//alert(title.value+"\n"+area+"\n"+url.value+"\n"+type+"\n"+color.value);
+	output(title.value,area,type,color.value,url.value,1);
+	plus();
+}
+</script>
+</body>
+</html>

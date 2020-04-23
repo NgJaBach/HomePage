@@ -1,0 +1,71 @@
+﻿.calbox {
+	height:36px;
+	width:40px;
+	border-radius:5px;
+	float:right;
+}
+.top-bar {
+	width:66%;
+	position:absolute;
+	right:1%;
+	height:36px;
+}
+.addbox {
+	height:36px;
+	width:40px;
+	border-radius:5px;
+	float:left;
+}
+.cent {
+	position:absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.calculator {
+	width:350px;
+	height:500px;
+	transform:translate(-50%,-50%);
+	position:absolute;
+	top:50%;
+	left:50%;
+	background-color:#000000;
+	border-radius:50px;
+	z-index:1;
+	padding:50px 50px;
+	padding-bottom:70px;
+}
+.showingtext {
+	border-radius:8px;
+	width:100%;
+	height:60px;
+	font-family:sans-serif;
+	font-size:xx-large;
+	margin:5px;
+}
+.bb {
+	border-radius:8px;
+	width:10;
+	height:100px;
+	
+}
+.dick {
+	width:78px;
+	height:78px;
+	margin:2px;
+	font-size:xx-large;
+	border-radius:10px;
+	font-family:sans-serif;
+	background-color:#eeeeee;
+}
+.special-dick {
+	width:78px;
+	height:164px;
+	margin:2px;
+	font-size:xx-large;
+	border-radius:10px;
+	font-family:sans-serif;
+	background-color:#ffab00;
+}

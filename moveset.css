@@ -1,0 +1,24 @@
+﻿.topdown {
+	position:relative;
+	animation:KEYtopdown 0.5s; 
+}
+@keyframes KEYtopdown {
+	0%{
+	top:-300px; 
+	opacity:0;
+	}
+}
+.fadein {
+	position:relative;
+	animation:KEYfadein 0,5s;
+}
+@keyframes KEYfadein {
+	0%{
+		transform:translate(100%,0%);
+		opacity:0;
+	}
+}
+@keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+}
